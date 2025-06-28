@@ -4,10 +4,10 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { MongoClient } = require("mongodb");
+require("dotenv").config(); // Load environment variables from .env file
 
 const PORT = 6050;
-//const MONGO_URL = "mongodb://admin:qwerty@localhost:27017";
-const MONGO_URL = "mongodb+srv://admin:Ritam%402004@cluster0.j6bmnim.mongodb.net/my-db?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URL = process.env.MONGO_URL;
 
 
 app.use(express.urlencoded({ extended: true }));
