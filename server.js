@@ -6,7 +6,9 @@ const path = require("path");
 const { MongoClient } = require("mongodb");
 
 const PORT = 6050;
-const MONGO_URL = "mongodb://admin:qwerty@localhost:27017";
+//const MONGO_URL = "mongodb://admin:qwerty@localhost:27017";
+const MONGO_URL = "mongodb+srv://admin:Ritam%402004@cluster0.j6bmnim.mongodb.net/my-db?retryWrites=true&w=majority&appName=Cluster0";
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
